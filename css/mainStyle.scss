@@ -1,25 +1,6 @@
 $mainColor: #f87708;
 
-@mixin  keyFrams($animtion-name){
-  @-webkit-keyframes #{$animtion-name}{
-      @content; 
-  }
-  @-moz-keyframes #{$animtion-name}{
-      @content; 
-  }
-  @keyframes #{$animtion-name} {
-      @content;
-  }
-}
-
-
-@mixin prefixer($property, $value, $prefixes: ()) {
-  @each $prefix in $prefixes {
-    #{"-"+$prefix+"-"+$property}: $value;
-  }
-  #{$property} : $value
-}
-
+@import "help";
 :root {
   --mainColor: #{$mainColor};
 }
