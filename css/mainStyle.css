@@ -197,12 +197,11 @@ body {
     margin-bottom: 15px;
     height: 2rem;
     font-size: 1rem; }
-  .our-skills .progress:first-child {
-    margin-top: 15px; }
-
-.our-skills h4 {
-  padding-top: 0;
-  margin-top: 0; }
+    .our-skills .progress:first-child {
+      margin-top: 15px; }
+  .our-skills h4 {
+    padding-top: 0;
+    margin-top: 0; }
 
 /* End our Skills */
 /* Contact us */
@@ -323,15 +322,6 @@ h3 {
 h2 {
   padding: 60px 0 40px; }
 
-.fa-facebook {
-  color: #0870f8; }
-
-.fa-google-plus {
-  color: #e94235; }
-
-.fa-twitter {
-  color: #1da1f2; }
-
 .features,
 .table-price,
 .our-client,
@@ -359,9 +349,17 @@ footer h3 {
 .our-team, .statistics, .contact-us {
   background-size: cover; }
 
-/* Hover btn */
 .btn {
   font-weight: bold; }
+
+.fa-facebook {
+  color: #0870f8; }
+
+.fa-google-plus {
+  color: #e94235; }
+
+.fa-twitter {
+  color: #1da1f2; }
 
 .hvr-outline-in {
   display: inline-block;
@@ -411,7 +409,6 @@ footer h3 {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-/* Hover btn */
 /*End Grouping */
 /* Start Media Query  */
 @media (max-width: 574px) {

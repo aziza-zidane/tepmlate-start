@@ -1,244 +1,211 @@
-.breadcrumb {
-    background: none;
-    color: #fff;
-    padding: 0px
-}
-
-.nav {
-    background-color: teal
-}
-
-.breadcrumb-item a {
-    padding: 6px;
-    font-weight: bold;
-    color: #fff
-}
-
-.breadcrumb-item.active a {
-    color: var(--mainColor)
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ""
-}
-
-.nav-link.disabled {
-    padding: 2px
+.nav-breadcrumb {
+  background-color: teal;
+  .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    .breadcrumb-item {
+      a {
+        padding: 6px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+      }
+      &.active a,
+      &:hover a {
+        color: var(--mainColor);
+      }
+    }
+    &::before {
+      content: '';
+    }
+  }
 }
 
 /* about-us */
 .about-us {
-    padding: 60px 10px;
-    letter-spacing: 1px;
-    line-height: 2;
-    text-align: justify;
-    background-color: #eee;
-}
-
-.about-us p {
+  padding: 60px 10px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-align: justify;
+  background-color: #eee;
+  p {
     min-width: 70%;
     margin: auto;
     padding-top: 20px;
+  }
 }
 
 /* about-boss */
 .about-boss {
-    margin: 20px 0
-}
-
-.about-boss .image {
-    height: 250px
-}
-
-.about-boss img {
-    border: 4px solid #fff;
-    transform: translateX(27px);
-    position: relative;
-    z-index: 33;
-    height: 100%;
-}
-
-.about-boss h2 {
+  margin: 20px 0;
+  .image {
+    height: 250px;
+    img {
+        border: 4px solid #fff;
+        transform: translateX(27px);
+        position: relative;
+        z-index: 33;
+        height: 100%;
+       }
+  }
+  h2 {
     color: teal;
     text-transform: uppercase;
-}
-
-.boss-text {
-    background-color: rgba(51, 51, 51, 0.856);
+   }
+   .boss-text {
     background-color: rgba(51, 51, 51, 0.856);
     padding: 20px 30px 0;
-
-}
-
-.about-boss p {
-
+  }
+  p {
     color: #ffffff;
     text-align: justify;
     line-height: 2;
-}
-
-.about-boss button {
-
+  }
+  button {
     border-radius: 15px;
     width: 200px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+  }
 }
 
-
-
+//end about boss
+// start help
 .help {
-    background-color: #eee;
-    padding: 40px 0;
-}
-
-.help h4 {
+  background-color: #eee;
+  padding: 40px 0;
+  h4 {
     padding: 20px 10px 10px;
-}
-
-.help i {
+   }
+   i {
     margin-top: 20px;
-}
-
-.fa-html5 {
+  }
+  .fa-html5 {
     color: #f47933;
-}
-
-.fa-css3-alt {
+  }
+  
+  .fa-css3-alt {
     color: #264de4;
-}
-
-.fa-js-square {
+  }
+  
+  .fa-js-square {
     color: #f0db4f;
-
-}
-
-.fa-vuejs {
+  }
+  
+  .fa-vuejs {
     color: #65c499;
+  }
 
 }
+
+ 
+
 
 /* SATRT FAQ Page */
 
 .faq .img-faq {
-
-    position: relative;
-    opacity: 0.6;
-    margin-bottom: 20px;
-    padding: 20px;
-
+  position: relative;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .faq h1 {
-
-    padding: 10px;
-    background: #010101ea;
-    color: #fff;
-    text-transform: capitalize;
-    position: absolute;
-    top: 43%;
-    left: 100px;
+  padding: 10px;
+  background: #010101ea;
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  top: 43%;
+  left: 100px;
 }
 
 .faq-quetions {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .faq-quetions .card {
-    border: none;
+  border: none;
 }
 
 .faq-quetions .card-header {
-    padding: 0;
-    background: none;
-    border-bottom: 1px solid var(--mainColor)
+  padding: 0;
+  background: none;
+  border-bottom: 1px solid var(--mainColor);
 }
 
 .faq-quetions h2 {
-    padding: 10px 0 0;
-
+  padding: 10px 0 0;
 }
 
 .faq-quetions .btn-link {
-    color: #000;
-    font-size: 17px;
-    font-weight: bold;
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .faq-quetions .card-header .btn-link::after {
-    content: "+";
-    float: right;
-    font-weight: bold;
-    font-size: 18px;
-
-
+  content: '+';
+  float: right;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .faq-quetions .card-header .btn-link.collapsed::after {
-    content: "-";
-    float: right;
-    font-weight: bold;
-    font-size: 18px;
-
-
+  content: '-';
+  float: right;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .card-body {
-    font-size: 18px;
-    background-color: #eee;
+  font-size: 18px;
+  background-color: #eee;
 }
 
 /* end  FAQ */
 /* About-query  */
 
 @media (max-width: 574px) {
-    .about-boss img {
-        transform: translateY(22px);
-    }
+  .about-boss img {
+    transform: translateY(22px);
+  }
 
-    .faq h1 {
-        top: 202px;
-        left: 25px;
-        font-size: 26px;
-    }
-
+  .faq h1 {
+    top: 202px;
+    left: 25px;
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
+  .about-boss img {
+    transform: translateY(20px);
+  }
 
-    .about-boss img {
-        transform: translateY(20px);
-    }
-
-    .faq h1 {
-        top: 202px;
-        left: 76px;
-        font-size: 26px;
-    }
-
+  .faq h1 {
+    top: 202px;
+    left: 76px;
+    font-size: 26px;
+  }
 }
 
-@media(min-width:768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-boss .image {
+    height: 600px;
+  }
 
-    .about-boss .image {
-        height: 600px
-    }
+  .about-boss img {
+    height: 100%;
+    transform: translateX(36px);
+  }
 
-    .about-boss img {
-        height: 100%;
-        transform: translateX(36px)
-    }
-
-    .faq h1 {
-        top: 202px;
-        left: 190px;
-
-    }
+  .faq h1 {
+    top: 202px;
+    left: 190px;
+  }
 }
 
-@media(min-width:992px) and (max-width:1199px) {
-    .about-boss img {
-      
-      
-    }
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-boss img {
+  }
 }

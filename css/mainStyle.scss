@@ -1,6 +1,6 @@
 $mainColor: #f87708;
 
-@import "help";
+
 :root {
   --mainColor: #{$mainColor};
 }
@@ -307,17 +307,18 @@ body {
     margin-bottom: 15px;
     height: 2rem;
     font-size: 1rem;
+    &:first-child {
+      margin-top: 15px;
+    }
   }
-  .progress:first-child {
-    margin-top: 15px;
-  }
+  
+  h4 {
+    padding-top: 0;
+    margin-top: 0;
+   }
 }
 
-.our-skills h4 {
-  padding-top: 0;
-  margin-top: 0;
-}
-
+ 
 /* End our Skills */
 /* Contact us */
 .contact-us {
@@ -489,17 +490,6 @@ h2 {
   padding: 60px 0 40px;
 }
 
-.fa-facebook {
-  color: #0870f8;
-}
-
-.fa-google-plus {
-  color: #e94235;
-}
-
-.fa-twitter {
-  color: #1da1f2;
-}
 .scroll-to-top i,
 .navbar-light .navbar-brand span,
 .features i,
@@ -536,68 +526,12 @@ footer h3 {
  background-size: cover;
 }
 
-
-/* Hover btn */
 .btn {
   font-weight: bold;
-}
 
-.hvr-outline-in {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  @extend %p-releative;
-  &::before {
-    pointer-events: none;
-    content: '';
-    @extend %p-absolute;
-    border: #e1e1e1 solid 4px;
-    top: -16px;
-    right: -16px;
-    bottom: -16px;
-    left: -16px;
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: top, right, bottom, left;
-    transition-property: top, right, bottom, left;
-  }
 }
+@import "help";
 
-.hvr-outline-in:hover:before,
-.hvr-outline-in:focus:before,
-.hvr-outline-in:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-  opacity: 1;
-}
-
-/* Grow Shadow */
-.hvr-grow-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-
-.hvr-grow-shadow:hover,
-.hvr-grow-shadow:focus,
-.hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* Hover btn */
 /*End Grouping */
 
 /* Start Media Query  */
