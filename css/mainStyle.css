@@ -71,8 +71,8 @@ body {
     min-width: 90px;
     height: 30px;
     line-height: 11px; }
-    .navbar .nav-item .nav-link:hover {
-      background: #5a5858; }
+  .navbar .nav-item:hover {
+    background: #5a5858; }
   .navbar .dropdown-menu {
     background-color: rgba(1, 1, 1, 0.5) !important;
     width: 200px;
@@ -446,9 +446,9 @@ footer h3 {
   animation-name: fadeIn 1s; }
 
 .loading-screen, .navbar .nav-item, .navbar .dropdown-item, .table-price .price-box p, .statistics .statique p {
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 /*# sourceMappingURL=mainStyle.css.map */

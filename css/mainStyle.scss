@@ -116,9 +116,9 @@ body {
     min-width: 90px;
     height: 30px;
     line-height: 11px;
-    &:hover{
-      background: #5a5858;
-    }
+  }
+  &:hover{
+    background: #5a5858;
   }
   &.active {
     @extend %bg-main-color;
@@ -573,5 +573,5 @@ footer h3 {
 }
 
 %transition {
-  @include prefixer(transition, 1s, webkit moz o);
+  @include prefixer(transition, .5s, webkit moz o);
 }
