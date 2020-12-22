@@ -120,15 +120,15 @@
   }
   h1 {
     padding: 10px;
-    background: #010101ea;
+    background: rgba( #000000,0.5);
     color: #fff;
     text-transform: capitalize;
     position: absolute;
     top: 43%;
     left: 100px;
     @media (max-width: 574px) {
-      top: 202px;
-      left: 25px;
+     top: 183px;
+     left: 84px;
       font-size: 26px;
     }
     @media (min-width: 575px) and (max-width: 767px) {

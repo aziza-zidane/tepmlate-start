@@ -1,15 +1,11 @@
 $mainColor: #f87708;
-
-
 :root {
   --mainColor: #{$mainColor};
 }
-
 body {
   padding-top: 50px;
   font-family: 'Eczar';
 }
-
 /* start scroll to top */
 .loading-screen {
   position: fixed;
@@ -71,7 +67,6 @@ body {
 
     &:after {
       @extend %bg-main-color;
-
       width: 75%;
       height: 75%;
       border-radius: 50%;
@@ -320,7 +315,7 @@ body {
 
  
 /* End our Skills */
-/* Contact us */
+/* Start Contact us */
 .contact-us {
   min-height: 400px;
   background: url('/web/bak4.jpg') no-repeat center center fixed;
